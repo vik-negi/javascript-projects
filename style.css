@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+nav{
+    height: 65px;
+    padding: 0 3em;
+    background-color: rgba(255,255,255,0.88);
+    box-shadow: rgba(0,0,0,0.4) 2px 1px 3px;
+}
+
+.todo-cont{
+    margin: 120px 0px;
+    display: flex;
+    justify-content: center;
+}
+.todo{
+    width: 450px;
+    /* background-color: rgba(15, 15, 15, 0.97); */
+    box-shadow: rgba(0,0,0,0.4) 1px 1px 12px ;
+    border-radius: 5px;
+    padding: 0;
+    /* background-color: rgba(31, 31, 31, 0.99); */
+}
+.todo h1{
+    background-color: rgba(31, 31, 31, 0.99);
+    padding: 12px 25px;
+    font-size: 28px;
+    color: #d1d1d1;
+}
+.todo h1 i{
+    float: right;
+    cursor: pointer;
+}
+.todo h1 i:nth-child(2){
+    margin-right: 10px;
+}
+
+
+.todo h1 i:hover{
+    float: right;
+    color: #f1f1f1;
+    text-shadow: rgba(255,255,255,0.5) 1px 1px 15px;
+}
+input[type="text"]{
+    width: 100%;
+    height: 55px;
+    outline: none;
+    border: none;
+    padding-left: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #a1a1a1;
+    text-shadow: rgba(255,255,255,0.5) 1px 1px 15px;
+}
+input[type="text"]::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+}
+.todo ul li span i{
+    margin-top: 9px;
+    float: right;
+    font-size: 20px;
+    color: rgba(240, 3, 3, 0.5);
+    transition: 0.091s ease-out;
+    opacity: 0;
+}
+.todo ul li span i:hover{
+    font-size: 20px;
+    cursor: pointer;
+    color: rgba(155, 18, 18, 0.9);
+    transform: scale(1.2);
+}
+.todo ul li{
+    list-style: none;
+    align-items: center;
+    line-height: 2.5;
+    padding: 5px 25px;
+    background-color: rgba(200,200,200,0.25);
+}
+.todo ul li:hover span i{
+    opacity: 1;
+}
+.todo ul li:nth-child(even){
+    background-color: rgba(255,255,255,0.58);
+}
