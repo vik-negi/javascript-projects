@@ -11,6 +11,37 @@ nav{
     background-color: rgba(255,255,255,0.88);
     box-shadow: rgba(0,0,0,0.4) 2px 1px 3px;
 }
+.navbar{
+    display: flex;
+    line-height: 2.5;
+    align-items: center;
+    justify-content: space-between;
+}
+.web-pic{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.stop-bar{
+    padding: 5px 8px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,0.58) 1px 1px 5px;
+}
+.stop-bar:hover{
+    cursor: pointer;
+    background-color: #a1a1a1;
+}
+
+
+.stop-bar:hover  .fa-stop{
+    color: #fff;
+}
+.stop-bar .fa-stop{
+    font-size: 25px;
+}
 
 .todo-cont{
     margin: 120px 0px;
